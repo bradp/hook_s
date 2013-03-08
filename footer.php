@@ -8,8 +8,9 @@
  * @since _s 1.0
  */
 ?>
-    <?php tha_content_after(); ?>
+    <?php tha_content_bottom(); ?>
 	</div><!-- #main -->
+    <?php tha_content_after(); ?>
     <?php tha_footer_before(); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
         <?php tha_footer_top(); ?>
