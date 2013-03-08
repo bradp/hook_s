@@ -5,7 +5,9 @@
  */
 ?>
 
+<?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php tha_entry_top(); ?>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', '_s' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
@@ -22,6 +24,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
+
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', '_s' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', '_s' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
@@ -58,4 +61,6 @@
 
 		<?php edit_post_link( __( 'Edit', '_s' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+	<?php tha_entry_bottom(); ?>
 </article><!-- #post-## -->
+<?php tha_entry_after(); ?>
