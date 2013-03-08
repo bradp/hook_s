@@ -6,7 +6,9 @@
  * @since _s 1.0
  */
 ?>
+	<?php tha_sidebars_before(); ?>
 	<div id="secondary" class="widget-area" role="complementary">
+		<?php tha_sidebar_top(); ?>
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
@@ -31,4 +33,6 @@
 			</aside>
 
 		<?php endif; // end sidebar widget area ?>
+		<?php tha_sidebar_bottom(); ?>
 	</div><!-- #secondary -->
+	<?php tha_sidebars_after(); ?>
