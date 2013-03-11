@@ -12,3 +12,8 @@ Use hook_s, hack it apart, customize it, do what ever you want.
 
 This theme, like WordPress and _s, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+
+
+---
+Aww yeah, props from [WPDaily](http://wpdaily.co/hooks-starter-tha/)
+
