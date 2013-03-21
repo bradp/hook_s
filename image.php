@@ -3,7 +3,6 @@
  * The template for displaying image attachments.
  *
  * @package _s
- * @since _s 1.0
  */
 
 get_header();
@@ -35,9 +34,9 @@ get_header();
 						<?php edit_post_link( __( 'Edit', '_s' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-meta -->
 
-					<nav id="image-navigation" class="navigation-image">
-						<span class="previous"><?php previous_image_link( false, __( '&larr; Previous', '_s' ) ); ?></span>
-						<span class="next"><?php next_image_link( false, __( 'Next &rarr;', '_s' ) ); ?></span>
+					<nav role="navigation" id="image-navigation" class="navigation-image">
+						<div class="previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', '_s' ) ); ?></div>
+						<div class="next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', '_s' ) ); ?></div>
 					</nav><!-- #image-navigation -->
 				</header><!-- .entry-header -->
 
