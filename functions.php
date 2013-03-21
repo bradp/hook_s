@@ -3,13 +3,11 @@
  * _s functions and definitions
  *
  * @package _s
- * @since _s 1.0
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since _s 1.0
  */
 if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
@@ -27,7 +25,6 @@ if ( ! function_exists( '_s_setup' ) ) :
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * @since _s 1.0
  */
 function _s_setup() {
 
@@ -118,7 +115,7 @@ add_action( 'after_setup_theme', '_s_register_custom_background' );
 /**
  * Register widgetized area and update sidebar with default widgets
  *
- * @since _s 1.0
+ 
  */
 function _s_widgets_init() {
 	register_sidebar( array(

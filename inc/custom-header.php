@@ -14,7 +14,7 @@
 
  *
  * @package _s
- * @since _s 1.0
+ 
  */
 
 /**
@@ -92,7 +92,7 @@ if ( ! function_exists( '_s_header_style' ) ) :
  *
  * @see _s_custom_header_setup().
  *
- * @since _s 1.0
+ 
  */
 function _s_header_style() {
 
@@ -133,7 +133,7 @@ if ( ! function_exists( '_s_admin_header_style' ) ) :
  *
  * @see _s_custom_header_setup().
  *
- * @since _s 1.0
+ 
  */
 function _s_admin_header_style() {
 ?>
@@ -163,7 +163,7 @@ if ( ! function_exists( '_s_admin_header_image' ) ) :
  *
  * @see _s_custom_header_setup().
  *
- * @since _s 1.0
+ 
  */
 function _s_admin_header_image() { ?>
 	<div id="headimg">
