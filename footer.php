@@ -21,8 +21,8 @@
 		</div><!-- .site-info -->
         <?php tha_footer_bottom(); ?>
 	</footer><!-- #colophon -->
+    <?php tha_footer_after(); ?>
 </div><!-- #page -->
-<?php tha_footer_after(); ?>
 <?php tha_body_bottom(); ?>
 <?php wp_footer(); ?>
 
